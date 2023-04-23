@@ -1,0 +1,383 @@
+/* MEDIA-MOBILE */
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+
+  /* modal */
+
+  .modal {
+    width: 408px;
+  }
+
+  .modal-label-mobile {
+    font-size: 12px;
+  }
+
+  /* header */
+
+  .phone-contacts {
+    font-size: 36px;
+  }
+
+  .mobile-media-list {
+    gap: 56px;
+  }
+
+  /* hero */
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/people_office_tab_1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 428px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background/people_office_tab_2x.jpg);
+    }
+  }
+}
+
+/* MEDIA-TABLET */
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  /* header */
+
+  .menu-open-btn {
+    display: none;
+  }
+
+  .container-header {
+    justify-content: start;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    margin-left: 76px;
+    gap: 40px;
+  }
+
+  .current {
+    position: relative;
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--active-color);
+    left: 0;
+    bottom: -1px;
+  }
+
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--brand-color-dark);
+    transition: color 250ms var(--cubic);
+  }
+
+  .header-link:hover,
+  .header-link:focus {
+    color: var(--active-color);
+  }
+
+  .contacts-list {
+    display: block;
+  }
+
+  .contacts {
+    font-style: normal;
+    margin-left: auto;
+  }
+
+  .contacts-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--contacts-color);
+    transition: color 250ms var(--cubic);
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .contacts-item:hover,
+  .contacts-item:focus {
+    color: var(--active-color);
+  }
+
+  /* hero */
+
+  .hero {
+    width: 768px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+  /* benefits */
+
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+  .benefits-card {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .benefits-card:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .benefits-item {
+    text-align: start;
+  }
+
+  /* team */
+
+  .team-list {
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+
+  /* customers */
+
+  .customers-list {
+    width: 552px;
+    margin: 0 auto;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - (24px * 2)) / 3);
+  }
+
+  /* footer */
+
+  .container-footer {
+    width: 552px;
+    margin: 0 auto;
+  }
+
+  .logo-media-wrap {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .subscribe-wrap {
+    display: flex;
+    gap: 24px;
+  }
+
+  .logo-mob {
+    display: inline-block;
+  }
+
+  .footer-text {
+    margin: 16px 0 0 0;
+  }
+
+  .footer-title {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  .btn-subscribe-wrap {
+    margin: 0;
+  }
+}
+
+/* MEDIA-DESKTOP */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .sections {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* header */
+
+  .contacts-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .contacts-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--contacts-color);
+    transition: color 250ms var(--cubic);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  /* hero */
+
+  .hero {
+    width: 100%;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background/people_office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background/people_office_desk_2x.jpg);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 45px;
+  }
+
+  /* benefits */
+
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .benefits-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .benefits-card {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+
+  .benefits-image {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .benefits-item {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* about */
+
+  .about {
+    display: block;
+    padding-top: 0;
+  }
+  .about-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-item {
+    flex-basis: calc((100%-24px * 2) / 3);
+  }
+
+  /* team */
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px * 3) / 4);
+  }
+
+  /* customers */
+
+  .customers-list {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .customers-item {
+    flex-basis: calc((100% - (24px * 5)) / 6);
+  }
+
+  /* footer */
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .container-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-media-wrap {
+    gap: 120px;
+    margin-bottom: 0;
+  }
+
+  .subscribe-input {
+    width: 264px;
+    border: 1px solid #ffffff;
+    margin: 0;
+  }
+  .subscribe-input::placeholder {
+    color: #ffffff;
+  }
+}

@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>WebStudio</title>
   </head>
 
@@ -65,6 +66,77 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="mobile-nav-wrap">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav-wrap list">
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-item">
+              <a class="mobile-link link" href="">Contacts</a>
+            </li>
+          </nav>
+        </div>
+        <div class="mobile-soc-wrap">
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list list">
+              <li class="mobile-contacts-item">
+                <a class="phone-contacts link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-contacts-item">
+                <a class="mailto-contacts link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-media-list list">
+            <li class="media-item">
+              <a href="" class="media-link link">
+                <svg class="media-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a href="" class="media-link link">
+                <svg class="media-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a href="" class="media-link link">
+                <svg class="media-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="media-item">
+              <a href="" class="media-link link">
+                <svg class="media-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -140,6 +212,7 @@
           <ul class="about-list list">
             <li class="about-item">
               <img
+                srcset="./images/about/monitor_2x.jpg 2x"
                 src="./images/about/monitor.jpg"
                 alt="monitor"
                 width="360"
@@ -148,6 +221,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/about/smartphone_2x.jpg 2x"
                 src="./images/about/smartphone.jpg"
                 alt="smartphone"
                 width="360"
@@ -156,6 +230,7 @@
             </li>
             <li class="about-item">
               <img
+                srcset="./images/about/monitor_smartphone_2x.jpg 2x"
                 src="./images/about/monitor_smartphone.jpg"
                 alt="monitor and smartphone"
                 width="360"
@@ -172,6 +247,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/team/mark_guerrero_2x.jpg 2x"
                 src="./images/team/mark_guerrero.jpg"
                 alt="a man in a blue shirt"
                 width="264"
@@ -214,6 +290,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/tom_ford_2x.jpg 2x"
                 src="./images/team/tom_ford.jpg"
                 alt="a man in a blue shirt"
                 width="264"
@@ -256,6 +333,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/camila_garcia_2x.jpg 2x"
                 src="./images/team/camila_garcia.jpg"
                 alt="a woman in a pink sweater"
                 width="264"
@@ -298,6 +376,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/team/daniel_wilson_2x.jpg 2x"
                 src="./images/team/daniel_wilson.jpg"
                 alt="a man in a gray T-shirt"
                 width="264"
@@ -395,47 +474,49 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container container-footer">
-        <div class="container-logo">
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-white">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="container-media">
-          <p class="footer-title">Social media</p>
-          <ul class="media-list list">
-            <li class="media-item">
-              <a href="" class="media-link link">
-                <svg class="media-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a href="" class="media-link link">
-                <svg class="media-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a href="" class="media-link link">
-                <svg class="media-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a href="" class="media-link link">
-                <svg class="media-icon" width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="logo-media-wrap">
+          <div class="container-logo">
+            <a class="logo link logo-mob" href="./index.html"
+              >Web<span class="logo-white">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="container-media">
+            <p class="footer-title">Social media</p>
+            <ul class="media-list list">
+              <li class="media-item">
+                <a href="" class="media-link link">
+                  <svg class="media-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="" class="media-link link">
+                  <svg class="media-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="" class="media-link link">
+                  <svg class="media-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a href="" class="media-link link">
+                  <svg class="media-icon" width="24px" height="24px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <form class="footer-form">
           <p class="footer-title">Subscribe</p>
@@ -532,7 +613,9 @@
               value="accept-policy"
               id="policy"
             />
-            <label for="policy" class="modal-label policy-label"
+            <label
+              for="policy"
+              class="modal-label modal-label-mobile policy-label"
               ><span class="check-box">
                 <svg class="check-icon" width="10px" height="8px">
                   <use href="./images/icons.svg#icon-check"></use>
@@ -547,5 +630,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
