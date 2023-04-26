@@ -220,6 +220,40 @@
   .btn-subscribe-wrap {
     margin: 0;
   }
+
+  /* portfolio */
+  /* filter */
+
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    margin-bottom: 64px;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .filter-btn {
+    padding: 12px 24px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .portfolio-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 /* MEDIA-DESKTOP */
@@ -314,6 +348,7 @@
   }
 
   .benefits-item {
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -379,5 +414,54 @@
   }
   .subscribe-input::placeholder {
     color: #ffffff;
+  }
+
+  /* portfolio */
+  /* filter */
+
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .filter-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+
+  .portfolio-cover-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .portfolio-cover-text {
+    display: block;
+    position: absolute;
+    padding: 40px 32px;
+    background-color: var(--brand-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    top: 0;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms var(--cubic);
+  }
+
+  .portfolio-link:hover .portfolio-cover-text,
+  .portfolio-link:focus .portfolio-cover-text {
+    transform: translate(0);
+  }
+
+  .portfolio-item-footer {
+    box-shadow: none;
   }
 }
