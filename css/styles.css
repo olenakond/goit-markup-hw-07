@@ -818,7 +818,7 @@ img {
   margin-bottom: 48px;
   row-gap: 16px;
   column-gap: 24px;
-  width: 320px;
+  max-width: 320px;
 }
 
 .filter-btn {
